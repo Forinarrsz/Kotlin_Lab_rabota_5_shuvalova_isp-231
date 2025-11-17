@@ -31,6 +31,13 @@ val hero = Hero()
     hero.mp = readln().toInt()
 
     println("name: ${hero.name}, gender: ${hero.gender}, class: ${hero.role}, hp: ${hero.hp}, mana: ${hero.mp}")
-
-
+    /*val oruchimaru = Enemy()
+    oruchimaru.name = "Оручимару"
+    oruchimaru.element = "Ветер"
+*/
+val oruchimaru = Enemy()
+    oruchimaru.name = "Oruchimaru"
+    naruto.status()
+    println("Наруто увидел врага ${oruchimaru.name}! Его здоровье - ${oruchimaru.hp}")
+    naruto.attack(oruchimaru,23)
 }
